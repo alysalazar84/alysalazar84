@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.categorias {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cabecera {
+    flex-grow: 1;
+    flex-basis: 0;
+    /*min-width: 33.33%;
+    max-width: 1200px; */ 
+    max-height: 150px;
+    margin: 0px auto;
+   
+
+}
+
+header {
+	position: sticky;   
+
+    top: 0; 
+
+
+}
+
+/* Menu */
+
+ 
+.menu{
+    
+    flex-grow: 1;
+    flex-basis: 0;
+	list-style: none;
+	padding: none;
+    padding-left: 10px;
+    padding-right: 250px;
+	background: #215eed;
+	width:auto;
+	height: 25px;
+	margin-top: 0px;
+}
+
+.menu li a{
+    flex-grow: 1;
+    flex-basis: 0;
+	text-decoration: none;
+	color: white;
+	padding:3px;
+	display: block;
+}
+
+.menu li{
+	display: inline-block;
+	text-align: center;
+}
+
+.menu li a:hover{
+	background: #ef8354;
+}
+/* responsive */
+@media (max-width: 952px){
+    
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    
+    .menu{
+        height: 120px;
+        background: white
+
+        
+    }
+}
+
+@media (max-width: 858px){
+    
+    .menu li a{
+        color: blue
+       
+        
+    }
+}
+
+.caracteristicas-productos {
+    margin-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+@media (max-width: 1000px) {
+    .caracteristicas-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .caracteristicas-productos {
+        grid-template-columns: 1fr;
+    }
+}
+
+.caracteristicas-productos-title {
+    text-align: center;
+}
+
+.caracteristicas-producto-item {
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+.caracteristicas-producto-item-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.caracteristicas-producto-item > .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.caracteristicas-producto-item > .description {
+    color: #666;
+}
+
+.caracteristicas-producto-item > .price {
+    font-style: italic;
+}
+
+button {
+    outline: none;
+    background: black;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+footer {
+	
+	text-align: center;
+}
