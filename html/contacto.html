@@ -4,6 +4,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Nombre de la pagina -->
         <title>Inicio</title>
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+        crossorigin="anonymous"
+      />
         <link href="../css/styles.css" rel="stylesheet" />
 
     </head>
@@ -11,7 +17,25 @@
         <header> 
             <!--Encabezado-->
             <img class="cabecera" src="../Images/products/NUEVO.png"  width="100%" >
-            <nav class="menu"> 
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary  ">
+                <div class="container-fluid">
+                  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li></a>
+                      <a class="nav-link" href="./productos.html">Productos</a>
+                      <a class="nav-link" href="./servicios.html">Servicios</a>
+                      <a class="nav-link" href="./acerca.html">Acerca De</a>
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                      <a class="nav-link" href="./ubicacion.html">Ubicacion</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            <!-- <nav class="menu"> 
                 <ul class="menu">
                     <li><a href="../index.html">Inicio</a></li>
                       <li><a href="./productos.html">Productos</a></li>
@@ -20,13 +44,67 @@
                       <li><a href="./contacto.html">Contacto</a></li>
                       <li><a href="./ubicacion.html">Ubicacion</a></li>
                 </ul>
-            </nav> 
+            </nav>  -->
         </header>
     <main>    
         
         <section class="categorias">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="well well-sm">
+                            <form class="form-horizontal" method="post">
+                                <fieldset>
+                                    <legend class="text-center header">Solicitud de Informacion</legend>
             
-            <article>
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="fname" name="name" type="text" placeholder="Primer Nombre" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="lname" name="name" type="text" placeholder="Segundo Nombre" class="form-control">
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control">
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <textarea class="form-control" id="message" name="message" placeholder="Solicita tu informacion y te responderemos en 2 dias habiles." rows="7"></textarea>
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <div class="col-md-12 text-center">
+                                            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <article>
                 <form action="#">
                     <h2> Solicita Informacion </h2>
                     <p>Sexo:
@@ -46,13 +124,8 @@
                       <div>
                         <input type="submit" value="Enviar">
                         <input type="reset" value="Borrar">
-                      </div>
-                      
-        </div>
-    
-    
                 </form>
-            </article>
+            </article> -->
         </section> 
 
             </div>
@@ -226,13 +299,56 @@
             </div>
         </section>
     </main>
-    <footer>
+<div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-muted">&copy; 2022 TequeShop, Inc</p>
+
+        <a
+          href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link px-2 text-muted">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="./html/productos.html" class="nav-link px-2 text-muted"
+              >productos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./html/contacto.html" class="nav-link px-2 text-muted"
+              >Contactos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./html/ubicacion.html" class="nav-link px-2 text-muted"
+              >Ubicacion</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- <footer>
         <p>Copyright 2022</p>
         <p><a href=”#”>Ley de Cookies</a></p>
         <p>Esta es nuestra dirección de contacto</p>
         <p>Síguenos en <a href=”#”>Facebook</a></p>
         <p>Síguenos en <a href=”#”>Instagram</a></p>
         <p>Nuestra Ubicacion <a href=”#”>Google Maps</a></p>
-    </footer> 
+    </footer> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script> 
 </body>
 </html>
